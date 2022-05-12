@@ -25,3 +25,13 @@ adb shell pm uninstall -k --user 0 <package>
 ```
 adb shell pm install-existing <package>
 ```
+
+
+### Revert Pushed Commit -
+- First locally reset commit you want to remove: `git reset`
+- Then make changes and create new commit
+- Then push changes forcefully: `git push -f`
+
+**Note:**<br>
+For this to work you will have to temporarily allow force pushing on the branch youre pushing to.<br>
+This can be done in the settings of github project.
